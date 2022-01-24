@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/gitops.py",
+            "console": "integratedTerminal",
+            "args": [],
+        },
+        {
+            "name": "pytest.debug_test_with_parameter",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "--arg",
+                "pass-test"
+            ],
+            "python": "${workspaceFolder}/pytest/exercises/debug_test_with_parameter/.env/bin/python3",
+            "console": "integratedTerminal",
+        }
+    ]
+}
